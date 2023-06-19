@@ -1,6 +1,12 @@
 # clashRules
 自用
 
+## subCoverter
+
+配置文件
+
+**sonicming/sub-web-config**
+
 
 
 ## subConfig
