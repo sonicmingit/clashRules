@@ -1,5 +1,6 @@
+# DIRECT,no-resolve
 # VM地址
-- IP-CIDR,10.0.10.0/24,DIRECT,no-resolve  
-- DOMAIN-KEYWORD,.vm,DIRECT,no-resolve
+IP-CIDR,10.0.10.0/24
+DOMAIN-KEYWORD,.vm
 # 内网地址
-- IP-CIDR,10.0.0.0/23,DIRECT,no-resolve  
+IP-CIDR,10.0.0.0/23
