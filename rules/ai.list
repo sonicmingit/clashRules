@@ -1,0 +1,8 @@
+# 美国  bard/claude
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN,bard.google.com
+
+# 新加坡ok GPT
+#DOMAIN-SUFFIX,openai.com
+#DOMAIN-SUFFIX,ai.com
+#DOMAIN-SUFFIX,bing.com
