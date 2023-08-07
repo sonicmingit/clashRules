@@ -1,6 +1,7 @@
 # 美国  bard/claude
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN,bard.google.com
+DOMAIN-SUFFIX,claude.ai
 
 # 新加坡ok GPT
 #DOMAIN-SUFFIX,openai.com
