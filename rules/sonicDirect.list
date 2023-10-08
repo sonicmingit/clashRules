@@ -4,3 +4,5 @@ IP-CIDR,10.0.10.0/24
 DOMAIN-KEYWORD,.vm
 # 内网地址
 IP-CIDR,10.0.0.0/23
+# utools
+DOMAIN-KEYWORD,u-tools.cn
