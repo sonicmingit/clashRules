@@ -1,10 +1,13 @@
 backendOptions:
+  # 需修改成项目subconverter后端部署地址
   - value: "http://sonicming.top:58081/sub?"
 remoteConfig:
+  # 本项目自定义配置
   - label: "sonic"
     options:
     - label: "zsokami_Full_Mannix"
       value: "https://raw.githubusercontent.com/sonicmingit/clashRules/main/subConfig/zsokami-sonic.ini"
+  # 其他配置
   - label: "zsokami"
     options:
     - label: "ACL4SSR_Online_Full_Mannix"

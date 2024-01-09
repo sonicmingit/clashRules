@@ -2,6 +2,7 @@
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN,bard.google.com
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,meta.com
 
 # 新加坡ok GPT
 #DOMAIN-SUFFIX,openai.com
