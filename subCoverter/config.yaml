@@ -7,6 +7,10 @@ remoteConfig:
     options:
     - label: "zsokami_Full_Mannix"
       value: "https://raw.githubusercontent.com/sonicmingit/clashRules/main/subConfig/zsokami-sonic.ini"
+    - label: "sonic-group-pro"
+      value: "https://raw.githubusercontent.com/sonicmingit/clashRules/main/subConfig/sonic-group-pro.ini"
+    - label: "ACL4SSR_Online_Full"
+      value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"
   # 其他配置
   - label: "zsokami"
     options:

@@ -36,7 +36,7 @@ services:
 
 
 ## subConfig
-转换配置文件，用于subCoverter中配置地
+转换配置文件，用于subCoverter中的配置
 📌自定义规则修改
 
 
