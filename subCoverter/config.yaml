@@ -1,6 +1,7 @@
 backendOptions:
   # 需修改成项目subconverter后端部署地址
   - value: "http://sonicming.top:58081/sub?"
+  - value: "http://103.101.205.136:58081/sub?"
   - value: "http://47.108.53.77:4581/sub?"
 remoteConfig:
   # 本项目自定义配置
