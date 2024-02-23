@@ -1,4 +1,4 @@
-# DIRECT,no-resolve
+### DIRECT,no-resolve
 # VM地址
 IP-CIDR,10.0.10.0/24
 DOMAIN-KEYWORD,.vm

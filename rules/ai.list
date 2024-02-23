@@ -1,10 +1,20 @@
-# 美国  bard/claude
+# 美国AI  bard/claude...
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN,bard.google.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,meta.com
+DOMAIN,gemini.google.com
+DOMAIN-SUFFIX,bing.com
+DOMAIN,copilot.microsoft.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,ai.com
 
-# 新加坡ok GPT
-#DOMAIN-SUFFIX,openai.com
-#DOMAIN-SUFFIX,ai.com
-#DOMAIN-SUFFIX,bing.com
+
+
+
+
+
+
+
+
