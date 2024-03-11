@@ -9,6 +9,8 @@ DOMAIN,copilot.microsoft.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,ai.com
+# 扣子
+DOMAIN-SUFFIX,coze.com
 
 
 
