@@ -1,7 +1,7 @@
+# remote mos解析调用sock5代理 127.0.0.1:7891
 log:
   level: debug
   file: "/tmp/mosdns.log"
-# include 的插件会比本配置文件中的插件先初始化。
 include: []
 plugins:
   ## 国内域名 ##
@@ -88,6 +88,18 @@ plugins:
       # 打印请求日志
       #- exec: query_summary local_sequence
 
+  ## 国外解析 ##
+  - tag: "remote_forward"
+    type: "forward"
+    args:
+      concurrent: 2
+      upstreams:
+        - addr: "https://162.159.36.1/dns-query"
+          enable_http3: false
+          socks5: "127.0.0.1:7891" # 解析后走clash代理
+        - addr: "https://162.159.46.1/dns-query"
+          enable_http3: false
+          socks5: "127.0.0.1:7891" # 解析后走clash代理
 
   ## 国外解析 ##
   - tag: remote_sequence
@@ -100,7 +112,7 @@ plugins:
         # 上述规则拒绝查询，0拒绝响应
         exec: reject 0
       # openclash 端口
-      - exec: forward 127.0.0.1:7874
+      - exec: $remote_forward
       - exec: ttl 1800-0
       # 打印请求日志
       #- exec: query_summary remote_sequence

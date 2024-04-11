@@ -1,14 +1,13 @@
 log:
   level: debug
   file: "/tmp/mosdns.log"
-# include 的插件会比本配置文件中的插件先初始化。
 include: []
 plugins:
   ## 国内域名 ##
   - tag: geosite_cn
     type: domain_set
     args:
-      exps: # 域名表达式。
+      exps:
         - "lan"
         - "local"
         - "arpa"
@@ -23,9 +22,6 @@ plugins:
   - tag: geoip_cn
     type: ip_set
     args:
-      ips: # 可以是 IP 或 CIDR。
-        - "1.1.1.1"
-        - "1.1.1.1/24"
       files:
         - "/var/mosdns/geoip_cn.txt"
 
@@ -75,8 +71,6 @@ plugins:
   - tag: local_sequence
     type: sequence
     args:
-      # 所有请求都优先返回 ipv4，屏蔽 ipv6。
-      #- exec: prefer_ipv4
        #国内解析DNS
       - exec: $local_forward
       - matches:
@@ -85,8 +79,6 @@ plugins:
         # 局域网IP段
         - resp_ip 10.0.0.0/23
         exec: ttl 1800-0
-      # 打印请求日志
-      #- exec: query_summary local_sequence
 
 
   ## 国外解析 ##
@@ -102,8 +94,6 @@ plugins:
       # openclash 端口
       - exec: forward 127.0.0.1:7874
       - exec: ttl 1800-0
-      # 打印请求日志
-      #- exec: query_summary remote_sequence
 
   # 有响应终止返回
   - tag: has_resp_sequence
@@ -111,8 +101,6 @@ plugins:
     args:
       - matches: has_resp
         exec: accept
-        # 打印请求日志
-      #- exec: query_summary has_resp_sequence
 
   # fallback 用本地服务器 sequence
   # 返回非国内 ip 则 drop_resp

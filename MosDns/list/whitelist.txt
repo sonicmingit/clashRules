@@ -1,5 +1,6 @@
 # 白名单 /etc/mosdns/rule/whitelist.txt
 # 加入的域名始终允许使用 “本地 DNS” 进行解析，且优先级最高（每个域名一行，支持域名匹配规则）
+# `full` > `domain` > `regexp` > `keyword`
 domain:ntp.org
 domain:office.com
 domain:qlogo.cn
@@ -26,7 +27,7 @@ domain:xmoviebot.com
 domain:hdpt.xyz
 domain:pt.soulvoice.club
 domain:nyaa.tracker.wf
-domain:xiaoyakeeper.u.1996999.xyz
+keyword:xiaoyakeeper
 
 # IPV6 手动添加clash解析失败
 domain:chdbits.xyz

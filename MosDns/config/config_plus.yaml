@@ -1,8 +1,12 @@
+# 国外的走国外，其他走国内，如果失败国内走单独seq，国外用mos解析，sock5走clash
 log:
   level: debug
   file: "/tmp/mosdns.log"
 # include 的插件会比本配置文件中的插件先初始化。
 include: []
+# API 入口设置
+api:
+  http: ":8888" # 在该地址启动 api 接口。
 plugins:
   ## 国内域名 ##
   - tag: geosite_cn
@@ -114,17 +118,44 @@ plugins:
         # 打印请求日志
       #- exec: query_summary has_resp_sequence
 
-  # fallback 用本地服务器 sequence
-  # 返回非国内 ip 则 drop_resp
+  # fallback 本地查询
+  - tag: fallback_local_forward
+    type: forward
+    args:
+      concurrent: 1
+      upstreams:
+        - addr: "https://doh.apad.pro/dns-query"
+          bootstrap: "218.2.2.2"
+          enable_http3: false
   - tag: fallback_local
     type: sequence
     args:
-      - exec: $local_sequence
-      # 2024-03-21 删除非国内抛弃
-      # 检查响应IP是否不在国内IP集（geoip_cn）中。
- #     - matches: "!resp_ip $geoip_cn"
-        # 如果响应IP不是国内IP，则丢弃响应。
-  #      exec: drop_resp
+      # fallback优先ipv4
+      - exec: prefer_ipv4
+      - exec: $fallback_local_forward
+      # 输出日志
+      - exec: query_summary fallback_local
+
+  # fallback 外网mos查询走代理
+  - tag: fallback_remote_forward
+    type: forward
+    args:
+      concurrent: 2
+      upstreams:
+        - addr: "https://162.159.36.1/dns-query"
+          enable_http3: false
+          socks5: "127.0.0.1:7891" # 解析后走clash代理
+        - addr: "https://162.159.46.1/dns-query"
+          enable_http3: false
+          socks5: "127.0.0.1:7891" # 解析后走clash代理
+  - tag: fallback_remote
+    type: sequence
+    args:
+      # fallback优先ipv4
+      - exec: prefer_ipv4
+      - exec: $fallback_remote_forward
+      # 输出日志
+      - exec: query_summary fallback_remote
 
   # fallback 用远程服务器 sequence
   - tag: fallback
@@ -132,11 +163,11 @@ plugins:
     type: fallback
     args:
       # 主要序列 国内备用
-      primary: fallback_local #remote_sequence #
+      primary: fallback_local
       # 次要序列 国外解析
-      secondary: remote_sequence
+      secondary: fallback_remote
       # 阈值，主序列响应时间，默认200，增加到500
-      threshold: 300
+      threshold: 500
       # 表示次要序列始终待命，即使主要序列有效也可能使用次要序列。
       always_standby: true
 
@@ -160,15 +191,19 @@ plugins:
         exec: $local_sequence
       - exec: jump has_resp_sequence
       ### --- 国内外IP规则解析 --- ###
-      ## 国内解析 如果查询名匹配国内域名集（geosite_cn），则执行国内解析序列。
-      - matches:
-        - qname $geosite_cn
-        exec: $local_sequence
-      - exec: jump has_resp_sequence
+      # 优先匹配国外域名，如果匹配失败则执行国内解析序列。
       ## 国外解析 如果查询名匹配非国内域名集（geosite_no_cn），则执行国外解析序列。
       - matches:
         - qname $geosite_no_cn
         exec: $remote_sequence
+      - exec: jump has_resp_sequence
+      ## 国内解析 如果查询名匹配国内域名集（geosite_cn），则执行国内解析序列。
+      # 匹配国内域名才走国内解析
+#      - matches:
+#        - qname $geosite_cn
+#        exec: $local_sequence
+      # 非国外都执行国内匹配
+      - exec: $local_sequence
       - exec: jump has_resp_sequence
       ### --- 以上失败处理 --- ###
       - exec: $fallback
