@@ -1,0 +1,5 @@
+2024-04-10 10:06:14	WARN	remote_sequence.r1	upstream error	{"uqid": 798, "qname": "pkgautoupdate.synologyupdate.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:06:14	WARN	remote_sequence.r1	upstream error	{"uqid": 822, "qname": "pkgautoupdate.synologyupdate.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:08:39	WARN	local_sequence	upstream error	{"uqid": 890, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 10:08:39	WARN	local_sequence	upstream error	{"uqid": 889, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 13:18:40	WARN	udp_server	entry err	{"query": {"uqid": 7606, "client": "::ffff:127.0.0.1", "qname": "api.insight.synology.com.", "qtype": 28, "qclass": 1, "elapsed": "5.000342457s"}, "error": "context deadline exceeded"}

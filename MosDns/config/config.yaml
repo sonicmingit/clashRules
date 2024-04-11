@@ -1,0 +1,196 @@
+log:
+  level: debug
+  file: "/tmp/mosdns.log"
+include: []
+plugins:
+  ## 自定义国内外域名解析 ##
+  # 国内解析
+  - tag: custom_cn_domains
+    type: domain_set
+    args:
+      exps:
+        - "baidu.com"
+  # 国外解析
+  - tag: custom_foreign_domains
+    type: domain_set
+    args:
+      exps:
+        - "google.com"
+
+  ## 国内域名 ##
+  - tag: geosite_cn
+    type: domain_set
+    args:
+      exps:
+        - "lan"
+        - "local"
+        - "arpa"
+      files:
+        - "/etc/mosdns/rule/whitelist.txt"
+        - "/var/mosdns/geosite_cn.txt"
+        # 此两行注释,否则无法启动mosdns,原因为Geoip和Geosite两个文件UNPACK后无上述两文件。
+        #- "/var/mosdns/geosite_apple-cn.txt"
+        #- "/var/mosdns/geosite_category-games@cn.txt"
+  ## 国内 IP ##
+  - tag: geoip_cn
+    type: ip_set
+    args:
+      files:
+        - "/var/mosdns/geoip_cn.txt"
+
+  ## 国外域名 ##
+  - tag: geosite_no_cn
+    type: domain_set
+    args:
+      files:
+        - "/etc/mosdns/rule/greylist.txt"
+        - "/var/mosdns/geosite_geolocation-!cn.txt"
+
+  ## 自定义hosts ##
+  - tag: hosts
+    type: hosts
+    args:
+      files:
+        - "/etc/mosdns/rule/hosts.txt"
+
+  ## 国内解析 ##
+  - tag: local_forward
+    type: forward
+    args:
+      concurrent: 3
+      upstreams:
+        - tag: unicom1
+          addr: "221.11.1.68"
+          enable_pipeline: true
+          idle_timeout: 10
+        - tag: unicom2
+          addr: "124.89.1.129"
+          enable_pipeline: true
+        - tag: ali
+          addr: "223.5.5.5"
+          enable_pipeline: true
+        - tag: ten
+          addr: "119.29.29.29"
+          enable_pipeline: true
+        - tag: v6
+          addr: "2400:3200::1"
+          enable_pipeline: true
+        # - tag: localdns
+          # addr: "127.0.0.1:533"
+          # enable_pipeline: true
+          # idle_timeout: 3
+
+  ## 国内解析 ##
+  - tag: local_sequence
+    type: sequence
+    args:
+       #国内解析DNS
+      - exec: $local_forward
+      - matches:
+       #  检查是否已经收到了DNS响应
+        - has_resp
+        # 局域网IP段
+        - resp_ip 10.0.0.0/23
+        exec: ttl 1800-0
+
+
+  ## 国外解析 ##
+  - tag: remote_sequence
+    type: sequence
+    args:
+      # 规则
+      - matches:
+        # 检查查询类型是否为28（即IPv6地址查询）
+        - qtype 28
+        # 上述规则拒绝查询，0拒绝响应
+        exec: reject 0
+      # openclash 端口
+      - exec: forward 127.0.0.1:7874
+      - exec: ttl 1800-0
+
+  # 有响应终止返回
+  - tag: has_resp_sequence
+    type: sequence
+    args:
+      - matches: has_resp
+        exec: accept
+
+  # fallback 用本地服务器 sequence
+  # 返回非国内 ip 则 drop_resp
+  - tag: fallback_local
+    type: sequence
+    args:
+      - exec: $local_sequence
+      # 2024-03-21 删除非国内抛弃
+      # 检查响应IP是否不在国内IP集（geoip_cn）中。
+ #     - matches: "!resp_ip $geoip_cn"
+        # 如果响应IP不是国内IP，则丢弃响应。
+  #      exec: drop_resp
+
+  # fallback 用远程服务器 sequence
+  - tag: fallback
+    # 备用类型
+    type: fallback
+    args:
+      # 主要序列 国内备用
+      primary: fallback_local #remote_sequence #
+      # 次要序列 国外解析
+      secondary: remote_sequence
+      # 阈值，主序列响应时间，默认200，增加到500
+      threshold: 300
+      # 表示次要序列始终待命，即使主要序列有效也可能使用次要序列。
+      always_standby: true
+
+
+  # 主要的运行逻辑插件
+  # sequence 插件中调用的插件 tag 必须在 sequence 前定义，否则 sequence 找不到对应插件。
+  # 顺序执行，解析成功后 jump has_resp_sequence 结束，不再进行后面解析
+  - tag: main_sequence
+    type: sequence
+    args:
+      ### --- hosts --- ###
+      - exec: $hosts
+      - exec: jump has_resp_sequence
+      ### --- 拒绝类型为65（HTTPS DNS查询）的请求。 --- ###
+      - matches:
+        - qtype 65 # HTTPS DNS查询
+        exec: reject 3
+      ### --- 对类型为12（PTR记录，反向DNS查询）的请求执行国内解析序列。 --- ###
+      - matches:
+        - qtype 12
+        exec: $local_sequence
+      - exec: jump has_resp_sequence
+      ### --- 自定义国内外解析跳转(上面没设置几个，忽略了) --- ###
+      # # 国内
+      # - matches:
+        # - qname $custom_cn_domains
+        # exec: $local_sequence
+      # - exec: jump has_resp_sequence
+      # # 国外
+      # - matches:
+        # - qname $custom_foreign_domains
+        # exec: $remote_sequence
+      # - exec: jump has_resp_sequence
+      ### --- 国内外IP规则解析 --- ###
+      ## 国内解析 如果查询名匹配国内域名集（geosite_cn），则执行国内解析序列。
+      - matches:
+        - qname $geosite_cn
+        exec: $local_sequence
+      - exec: jump has_resp_sequence
+      ## 国外解析 如果查询名匹配非国内域名集（geosite_no_cn），则执行国外解析序列。
+      - matches:
+        - qname $geosite_no_cn
+        exec: $remote_sequence
+      - exec: jump has_resp_sequence
+      ### --- 以上失败处理 --- ###
+      - exec: $fallback
+
+
+
+  # mosdns参数
+  - tag: udp_server
+    type: udp_server
+    args:
+      entry: main_sequence
+      # mosdns监听端口，后续在Adguard中作为上游地址填写。
+      listen: ":5335"

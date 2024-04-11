@@ -1,0 +1,39 @@
+# 白名单 /etc/mosdns/rule/whitelist.txt
+# 加入的域名始终允许使用 “本地 DNS” 进行解析，且优先级最高（每个域名一行，支持域名匹配规则）
+domain:ntp.org
+domain:office.com
+domain:qlogo.cn
+domain:qq.com
+domain:redhat.com
+domain:sonicming.top
+domain:ipv6-test.com
+keyword:douyin
+keyword:microsoft
+keyword:windows
+keyword:speedtest
+domain:mi.com
+
+# 日志报错，手动修改成国内解析
+domain:hdsky.me
+domain:synology.com
+domain:icloud.com
+domain:apple.com
+domain:chdbits.co
+domain:book.fucknvidia.link
+domain:docker-cn.com
+domain:pttime.org
+domain:xmoviebot.com
+domain:hdpt.xyz
+domain:pt.soulvoice.club
+domain:nyaa.tracker.wf
+domain:xiaoyakeeper.u.1996999.xyz
+
+# IPV6 手动添加clash解析失败
+domain:chdbits.xyz
+domain:time.apple.com
+domain:tracker.piggo.me
+domain:a4k.net
+domain:beitai.pt
+domain:exodus.desync.com
+domain:tracker.opentrackr.org
+domain:open.stealth.si

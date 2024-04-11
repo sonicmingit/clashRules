@@ -1,0 +1,3 @@
+2024-04-10 09:46:07	INFO	unpacking entry	{"tag": "cn", "length": 11294, "file": "/var/mosdns/geoip_cn.txt"}
+2024-04-10 09:46:07	INFO	unpacking entry	{"tag": "cn", "length": 74454, "file": "/var/mosdns/geosite_cn.txt"}
+2024-04-10 09:46:07	INFO	unpacking entry	{"tag": "geolocation-!cn", "length": 24315, "file": "/var/mosdns/geosite_geolocation-!cn.txt"}

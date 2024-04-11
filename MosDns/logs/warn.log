@@ -1,0 +1,242 @@
+2024-04-10 09:46:07	INFO	unpacking entry	{"tag": "cn", "length": 11294, "file": "/var/mosdns/geoip_cn.txt"}
+2024-04-10 09:46:07	INFO	unpacking entry	{"tag": "cn", "length": 74454, "file": "/var/mosdns/geosite_cn.txt"}
+2024-04-10 09:46:07	INFO	unpacking entry	{"tag": "geolocation-!cn", "length": 24315, "file": "/var/mosdns/geosite_geolocation-!cn.txt"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "custom_cn_domains", "type": "domain_set"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "custom_foreign_domains", "type": "domain_set"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "geosite_cn", "type": "domain_set"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "geoip_cn", "type": "ip_set"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "geosite_no_cn", "type": "domain_set"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "hosts", "type": "hosts"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "local_sequence", "type": "forward"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "remote_sequence", "type": "sequence"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "has_resp_sequence", "type": "sequence"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "fallback_local", "type": "sequence"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "fallback", "type": "fallback"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "main_sequence", "type": "sequence"}
+2024-04-10 09:46:07	INFO	loading plugin	{"tag": "udp_server", "type": "udp_server"}
+2024-04-10 09:46:07	INFO	udp_server	udp server started	{"addr": "[::]:5335"}
+2024-04-10 09:46:07	INFO	all plugins are loaded
+2024-04-10 10:06:11	WARN	local_sequence	upstream error	{"uqid": 693, "qname": "pkgupdate7.synology.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 10:06:14	WARN	remote_sequence.r1	upstream error	{"uqid": 798, "qname": "pkgautoupdate.synologyupdate.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:06:14	WARN	remote_sequence.r1	upstream error	{"uqid": 822, "qname": "pkgautoupdate.synologyupdate.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:08:39	WARN	local_sequence	upstream error	{"uqid": 890, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 10:08:39	WARN	local_sequence	upstream error	{"uqid": 889, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 10:18:40	WARN	remote_sequence.r1	upstream error	{"uqid": 1254, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:26:19	WARN	remote_sequence.r1	upstream error	{"uqid": 1462, "qname": "xp.m-team.io.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:37:12	WARN	remote_sequence.r1	upstream error	{"uqid": 1870, "qname": "hub.docker.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:47:18	WARN	remote_sequence.r1	upstream error	{"uqid": 2694, "qname": "tracker.m-team.cc.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:49:00	WARN	remote_sequence.r1	upstream error	{"uqid": 2780, "qname": "tracker.torrent.eu.org.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:49:00	WARN	remote_sequence.r1	upstream error	{"uqid": 2780, "qname": "tracker.torrent.eu.org.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 10:53:31	WARN	local_sequence	upstream error	{"uqid": 2940, "qname": "hdsky.me.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 11:46:37	WARN	local_sequence	upstream error	{"uqid": 4550, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 12:15:03	WARN	local_sequence	upstream error	{"uqid": 5451, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 12:29:06	WARN	local_sequence	upstream error	{"uqid": 5885, "qname": "api.assrt.net.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 12:29:06	WARN	local_sequence	upstream error	{"uqid": 5885, "qname": "api.assrt.net.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 12:49:03	WARN	remote_sequence.r1	upstream error	{"uqid": 6582, "qname": "Global.QUICkCONNEcT.to.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 12:50:50	WARN	remote_sequence.r1	upstream error	{"uqid": 6822, "qname": "GLObal.qUIckcONNect.to.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 12:50:50	WARN	remote_sequence.r1	upstream error	{"uqid": 6822, "qname": "GLObal.qUIckcONNect.to.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 13:17:54	WARN	remote_sequence.r1	upstream error	{"uqid": 7585, "qname": "tracker.torrent.eu.org.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 13:18:40	WARN	local_sequence	upstream error	{"uqid": 7606, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 13:18:40	WARN	udp_server	entry err	{"query": {"uqid": 7606, "client": "::ffff:127.0.0.1", "qname": "api.insight.synology.com.", "qtype": 28, "qclass": 1, "elapsed": "5.000342457s"}, "error": "context deadline exceeded"}
+2024-04-10 13:18:40	WARN	local_sequence	upstream error	{"uqid": 7606, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 13:20:32	WARN	local_sequence	upstream error	{"uqid": 7707, "qname": "ntp.ntsc.ac.cn.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 13:28:51	WARN	local_sequence	upstream error	{"uqid": 7867, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 14:18:54	WARN	remote_sequence.r1	upstream error	{"uqid": 9447, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 14:20:57	WARN	remote_sequence.r1	upstream error	{"uqid": 9622, "qname": "pt.soulvoice.club.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 14:25:50	WARN	local_sequence	upstream error	{"uqid": 9789, "qname": "chdbits.xyz.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 14:40:19	WARN	remote_sequence.r1	upstream error	{"uqid": 10326, "qname": "tracker.torrent.eu.org.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 14:40:19	WARN	remote_sequence.r1	upstream error	{"uqid": 10326, "qname": "tracker.torrent.eu.org.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 14:40:19	WARN	remote_sequence.r1	upstream error	{"uqid": 10326, "qname": "tracker.torrent.eu.org.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 14:40:19	WARN	udp_server	entry err	{"query": {"uqid": 10326, "client": "::ffff:127.0.0.1", "qname": "tracker.torrent.eu.org.", "qtype": 1, "qclass": 1, "elapsed": "5.001109395s"}, "error": "context deadline exceeded"}
+2024-04-10 14:40:26	WARN	local_sequence	upstream error	{"uqid": 10357, "qname": "time.ustc.edu.cn.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 14:50:50	WARN	local_sequence	upstream error	{"uqid": 10712, "qname": "hdpt.xyz.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 14:53:41	WARN	local_sequence	upstream error	{"uqid": 10779, "qname": "api-pan.xunlei.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 14:53:52	WARN	local_sequence	upstream error	{"uqid": 10803, "qname": "gstat.ptmi.gitv.tv.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 14:54:00	WARN	local_sequence	upstream error	{"uqid": 10815, "qname": "www.163.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:09:08	WARN	local_sequence	upstream error	{"uqid": 11654, "qname": "mime.baidu.com.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 15:09:08	WARN	local_sequence	upstream error	{"uqid": 11655, "qname": "mbd.baidu.com.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 15:09:21	WARN	local_sequence	upstream error	{"uqid": 11664, "qname": "connect.rom.miui.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:11:55	WARN	local_sequence	upstream error	{"uqid": 11914, "qname": "sdkfp.jd.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:12:53	WARN	local_sequence	upstream error	{"uqid": 12045, "qname": "hsapi.jd.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:15:27	WARN	local_sequence	upstream error	{"uqid": 12227, "qname": "h.360buyimg.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:15:27	WARN	local_sequence	upstream error	{"uqid": 12231, "qname": "gias.jd.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:32:29	WARN	remote_sequence.r1	upstream error	{"uqid": 13722, "qname": "https.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 15:32:30	WARN	remote_sequence.r1	upstream error	{"uqid": 13726, "qname": "https.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 15:32:30	WARN	remote_sequence.r1	upstream error	{"uqid": 13726, "qname": "https.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 15:32:30	WARN	local_sequence	upstream error	{"uqid": 13732, "qname": "api.bolahg.cn.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:32:34	WARN	remote_sequence.r1	upstream error	{"uqid": 13778, "qname": "https.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 15:32:34	WARN	remote_sequence.r1	upstream error	{"uqid": 13778, "qname": "https.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 15:32:34	WARN	remote_sequence.r1	upstream error	{"uqid": 13784, "qname": "https.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 15:32:34	WARN	remote_sequence.r1	upstream error	{"uqid": 13784, "qname": "https.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 15:37:10	WARN	local_sequence	upstream error	{"uqid": 14152, "qname": "signaling.vn.cloud.tesla.cn.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 15:37:10	WARN	local_sequence	upstream error	{"uqid": 14152, "qname": "signaling.vn.cloud.tesla.cn.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 15:40:03	WARN	local_sequence	upstream error	{"uqid": 14541, "qname": "update.googleapis.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:40:03	WARN	udp_server	entry err	{"query": {"uqid": 14541, "client": "::ffff:127.0.0.1", "qname": "update.googleapis.com.", "qtype": 28, "qclass": 1, "elapsed": "5.000207218s"}, "error": "all upstream servers failed"}
+2024-04-10 15:40:34	WARN	local_sequence	upstream error	{"uqid": 14604, "qname": "long.weixin.qq.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:42:40	WARN	local_sequence	upstream error	{"uqid": 14780, "qname": "userprofile.mina.mi.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 15:43:00	WARN	local_sequence	upstream error	{"uqid": 14822, "qname": "userprofile.mina.mi.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:50:22	WARN	remote_sequence.r1	upstream error	{"uqid": 15449, "qname": "xiaoyakeeper.u.1996999.xyz.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 15:50:22	WARN	remote_sequence.r1	upstream error	{"uqid": 15449, "qname": "xiaoyakeeper.u.1996999.xyz.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 15:55:02	WARN	local_sequence	upstream error	{"uqid": 15797, "qname": "screentime.comm.miui.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 15:59:53	WARN	local_sequence	upstream error	{"uqid": 16095, "qname": "account.ai.xiaomi.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:00:29	WARN	local_sequence	upstream error	{"uqid": 16305, "qname": "sonicming.top.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:04:48	WARN	local_sequence	upstream error	{"uqid": 16859, "qname": "sonicming.top.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:04:48	WARN	local_sequence	upstream error	{"uqid": 16860, "qname": "sonicming.top.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:04:56	WARN	local_sequence	upstream error	{"uqid": 16871, "qname": "www.shooter.cn.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:10:40	WARN	local_sequence	upstream error	{"uqid": 17761, "qname": "login.sina.com.cn.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 16:10:40	WARN	local_sequence	upstream error	{"uqid": 17762, "qname": "beats.be.mi.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 16:10:40	WARN	local_sequence	upstream error	{"uqid": 17763, "qname": "beats.be.mi.com.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 16:12:52	WARN	local_sequence	upstream error	{"uqid": 18104, "qname": "lf-cdn-tos.bytescm.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:13:04	WARN	remote_sequence.r1	upstream error	{"uqid": 18160, "qname": "rr4---sn-2x3eenee.xn--ngstr-lra8j.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 16:17:06	WARN	local_sequence	upstream error	{"uqid": 18720, "qname": "a.zdmimg.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:06	WARN	udp_server	entry err	{"query": {"uqid": 18720, "client": "::ffff:127.0.0.1", "qname": "a.zdmimg.com.", "qtype": 28, "qclass": 1, "elapsed": "5.001948509s"}, "error": "context deadline exceeded"}
+2024-04-10 16:17:23	WARN	local_sequence	upstream error	{"uqid": 18774, "qname": "push-rtmp-hs-f5-enc.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:23	WARN	local_sequence	upstream error	{"uqid": 18774, "qname": "push-rtmp-hs-f5-enc.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:24	WARN	local_sequence	upstream error	{"uqid": 18787, "qname": "pull-flv-f26-proxy.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:25	WARN	udp_server	entry err	{"query": {"uqid": 18924, "client": "::ffff:127.0.0.1", "qname": "pull-fcdn-douyin-base2.s.bytefcdn.com.", "qtype": 1, "qclass": 1, "elapsed": "5.00014509s"}, "error": "context deadline exceeded"}
+2024-04-10 16:17:25	WARN	local_sequence	upstream error	{"uqid": 18924, "qname": "pull-fcdn-douyin-base2.s.bytefcdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:26	WARN	local_sequence	upstream error	{"uqid": 18981, "qname": "push-rtmp-l3-encryption.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:27	WARN	local_sequence	upstream error	{"uqid": 19049, "qname": "pull-rtmp-l95.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:27	WARN	local_sequence	upstream error	{"uqid": 19078, "qname": "pull-hls-hs-f5-enc.flive.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:28	WARN	local_sequence	upstream error	{"uqid": 19091, "qname": "pull-f5.flive.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:28	WARN	local_sequence	upstream error	{"uqid": 19091, "qname": "pull-f5.flive.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:28	WARN	local_sequence	upstream error	{"uqid": 19127, "qname": "k5-toutiao-ml.gslb.ksyuncdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:28	WARN	local_sequence	upstream error	{"uqid": 19127, "qname": "k5-toutiao-ml.gslb.ksyuncdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:29	WARN	local_sequence	upstream error	{"uqid": 19212, "qname": "pull-tsl-spe-l3.douyincdn.com.230b2a2545cfa773.queniubg.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:29	WARN	local_sequence	upstream error	{"uqid": 19213, "qname": "pull-f5-xg.flive.ixigua.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:29	WARN	local_sequence	upstream error	{"uqid": 19234, "qname": "pull-f5-io.flive.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:29	WARN	local_sequence	upstream error	{"uqid": 19237, "qname": "push-rtmp-f5-enc.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:30	WARN	local_sequence	upstream error	{"uqid": 19310, "qname": "pull-f3.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:17:31	WARN	local_sequence	upstream error	{"uqid": 19361, "qname": "pull-tsl-f96.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:18:12	WARN	local_sequence	upstream error	{"uqid": 19468, "qname": "mars.jd.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:18:15	WARN	local_sequence	upstream error	{"uqid": 19496, "qname": "waapdg.jd.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:18:56	WARN	local_sequence	upstream error	{"uqid": 19604, "qname": "mum.alibabachengdun.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:18:58	WARN	local_sequence	upstream error	{"uqid": 19631, "qname": "gaode-acs.m.taobao.com.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 16:18:58	WARN	local_sequence	upstream error	{"uqid": 19631, "qname": "gaode-acs.m.taobao.com.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 16:21:40	WARN	local_sequence	upstream error	{"uqid": 20017, "qname": "pull-m1.wxlivecdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:37	WARN	local_sequence	upstream error	{"uqid": 20356, "qname": "pull-flv-l1-hs.pstatp.com.wsdvs.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:38	WARN	local_sequence	upstream error	{"uqid": 20369, "qname": "push-rtmp-l3-hs.pstatp.com.queniurc.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:38	WARN	local_sequence	upstream error	{"uqid": 20394, "qname": "pull-hls-vr-l1.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:38	WARN	local_sequence	upstream error	{"uqid": 20398, "qname": "pull-rtmp-l95.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:38	WARN	local_sequence	upstream error	{"uqid": 20411, "qname": "pull-hls-f5-vs-tsl.douyincdn.com.queniuso.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:38	WARN	local_sequence	upstream error	{"uqid": 20432, "qname": "pull-flv-f1-hs.pstatp.com.wsdvs.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:39	WARN	local_sequence	upstream error	{"uqid": 20473, "qname": "pull-tsl-f1.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:39	WARN	local_sequence	upstream error	{"uqid": 20496, "qname": "push-rtmp-vr-l1.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:39	WARN	local_sequence	upstream error	{"uqid": 20503, "qname": "pull-l3-source.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:39	WARN	local_sequence	upstream error	{"uqid": 20516, "qname": "pull-tsl-spe-l6.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:40	WARN	local_sequence	upstream error	{"uqid": 20524, "qname": "pull-rtmp-f13.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:40	WARN	local_sequence	upstream error	{"uqid": 20528, "qname": "push-rtmp-l6.douyincdn.com.upvcloud.ks-cdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:40	WARN	local_sequence	upstream error	{"uqid": 20568, "qname": "pull-rtmp-l11-cny.douyincdn.com.tcdnlive.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:40	WARN	local_sequence	upstream error	{"uqid": 20568, "qname": "pull-rtmp-l11-cny.douyincdn.com.tcdnlive.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:22:40	WARN	local_sequence	upstream error	{"uqid": 20575, "qname": "push-rtmp-l13.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:24	WARN	local_sequence	upstream error	{"uqid": 21343, "qname": "pull-flv-spe-l26.douyincdn.com.c.cdnhwc3.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:25	WARN	local_sequence	upstream error	{"uqid": 21384, "qname": "push-rtmp-l26.douyincdn.com.c.cdnhwc3.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:25	WARN	local_sequence	upstream error	{"uqid": 21421, "qname": "pull-rtmp-f96.douyincdn.com.d.live.cdn.chinamobile.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:25	WARN	local_sequence	upstream error	{"uqid": 21423, "qname": "pull-rtmp-f96.douyincdn.com.d.live.cdn.chinamobile.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:28	WARN	local_sequence	upstream error	{"uqid": 21617, "qname": "hcdnl.push.gslb.c.cdnhwc2.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:28	WARN	local_sequence	upstream error	{"uqid": 21628, "qname": "pull-hls-vr-l6.douyincdn.com.hlsvcloud.ks-cdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:28	WARN	local_sequence	upstream error	{"uqid": 21628, "qname": "pull-hls-vr-l6.douyincdn.com.hlsvcloud.ks-cdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:28	WARN	local_sequence	upstream error	{"uqid": 21676, "qname": "pull-tsl-l26.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:28	WARN	local_sequence	upstream error	{"uqid": 21675, "qname": "pull-tsl-l26.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:29	WARN	local_sequence	upstream error	{"uqid": 21678, "qname": "pull-flv-f1.douyincdn.com.gccdn.net.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:27:30	WARN	local_sequence	upstream error	{"uqid": 21780, "qname": "pull-rtmp-l11.douyincdn.com.livecdn.liveplay.myqcloud.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:43:10	WARN	local_sequence	upstream error	{"uqid": 23220, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:50:50	WARN	remote_sequence.r1	upstream error	{"uqid": 23915, "qname": "hdpt.xyz.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 16:53:44	WARN	local_sequence	upstream error	{"uqid": 24143, "qname": "api-pan.xunlei.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 16:58:36	WARN	local_sequence	upstream error	{"uqid": 24501, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 17:00:36	WARN	local_sequence	upstream error	{"uqid": 24682, "qname": "m.douban.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 17:00:36	WARN	local_sequence	upstream error	{"uqid": 24682, "qname": "m.douban.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 17:00:36	WARN	local_sequence	upstream error	{"uqid": 24682, "qname": "m.douban.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 17:00:36	WARN	udp_server	entry err	{"query": {"uqid": 24682, "client": "::ffff:127.0.0.1", "qname": "m.douban.com.", "qtype": 28, "qclass": 1, "elapsed": "5.00024253s"}, "error": "context deadline exceeded"}
+2024-04-10 17:10:22	WARN	remote_sequence.r1	upstream error	{"uqid": 25392, "qname": "xiaoyakeeper.u.1996999.xyz.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 17:11:45	WARN	remote_sequence.r1	upstream error	{"uqid": 25536, "qname": "pt.soulvoice.club.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 17:11:45	WARN	remote_sequence.r1	upstream error	{"uqid": 25537, "qname": "pt.soulvoice.club.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 17:20:43	WARN	remote_sequence.r1	upstream error	{"uqid": 26302, "qname": "iStoreOS.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 17:20:43	WARN	local_sequence	upstream error	{"uqid": 26302, "qname": "iStoreOS.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 17:20:43	WARN	remote_sequence.r1	upstream error	{"uqid": 26302, "qname": "iStoreOS.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 17:20:43	WARN	remote_sequence.r1	upstream error	{"uqid": 26302, "qname": "iStoreOS.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 17:20:43	WARN	fallback	secondary error	{"query": {"uqid": 26302, "client": "::ffff:127.0.0.1", "qname": "iStoreOS.", "qtype": 1, "qclass": 1, "elapsed": "5.000342622s"}, "error": "context deadline exceeded"}
+2024-04-10 17:20:43	WARN	remote_sequence.r1	upstream error	{"uqid": 26305, "qname": "iStoreOS.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 17:41:00	WARN	local_sequence	upstream error	{"uqid": 27901, "qname": "sonicming.top.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 17:55:51	WARN	local_sequence	upstream error	{"uqid": 29070, "qname": "time1.cloud.tencent.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 18:05:15	WARN	local_sequence	upstream error	{"uqid": 29915, "qname": "beacons.gcp.gvt2.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 18:24:05	WARN	local_sequence	upstream error	{"uqid": 31472, "qname": "sonicming.top.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 18:27:56	WARN	local_sequence	upstream error	{"uqid": 31749, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 18:50:50	WARN	remote_sequence.r1	upstream error	{"uqid": 33382, "qname": "open.stealth.si.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 18:50:50	WARN	remote_sequence.r1	upstream error	{"uqid": 33401, "qname": "tracker.torrent.eu.org.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 18:50:50	WARN	remote_sequence.r1	upstream error	{"uqid": 33411, "qname": "nyaa.tracker.wf.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 18:50:50	WARN	remote_sequence.r1	upstream error	{"uqid": 33414, "qname": "nyaa.tracker.wf.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 18:50:50	WARN	local_sequence	upstream error	{"uqid": 33419, "qname": "hdpt.xyz.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 18:50:50	WARN	local_sequence	upstream error	{"uqid": 33420, "qname": "hdpt.xyz.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 18:50:50	WARN	local_sequence	upstream error	{"uqid": 33420, "qname": "hdpt.xyz.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 18:57:40	WARN	local_sequence	upstream error	{"uqid": 33881, "qname": "sonicming.top.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 18:57:40	WARN	local_sequence	upstream error	{"uqid": 33881, "qname": "sonicming.top.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 19:01:41	WARN	local_sequence	upstream error	{"uqid": 34121, "qname": "chdbits.co.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 19:20:22	WARN	remote_sequence.r1	upstream error	{"uqid": 34646, "qname": "xiaoyakeeper.u.1996999.xyz.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 19:30:57	WARN	local_sequence	upstream error	{"uqid": 35029, "qname": "sub.xmp.sandai.net.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 19:40:23	WARN	local_sequence	upstream error	{"uqid": 35415, "qname": "ntp.aliyun.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 19:49:33	WARN	local_sequence	upstream error	{"uqid": 35683, "qname": "api.ad.xiaomi.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 19:49:33	WARN	local_sequence	upstream error	{"uqid": 35684, "qname": "api.ad.xiaomi.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:00:35	WARN	remote_sequence.r1	upstream error	{"uqid": 36155, "qname": "t.xmoviebot.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 20:00:38	WARN	local_sequence	upstream error	{"uqid": 36172, "qname": "t.xmoviebot.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:03:49	WARN	remote_sequence.r1	upstream error	{"uqid": 36299, "qname": "pt.soulvoice.club.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 20:06:56	WARN	remote_sequence.r1	upstream error	{"uqid": 36461, "qname": "service.cmp.oath.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 20:06:56	WARN	remote_sequence.r1	upstream error	{"uqid": 36461, "qname": "service.cmp.oath.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 20:06:56	WARN	remote_sequence.r1	upstream error	{"uqid": 36487, "qname": "edge-mqtt.facebook.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 20:06:57	WARN	local_sequence	upstream error	{"uqid": 36558, "qname": "y.qq.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:06:57	WARN	local_sequence	upstream error	{"uqid": 36564, "qname": "mdap.alipay.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:06:57	WARN	local_sequence	upstream error	{"uqid": 36564, "qname": "mdap.alipay.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:06:57	WARN	local_sequence	upstream error	{"uqid": 36572, "qname": "api-access.pangolin-sdk-toutiao1.com.queniuiq.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:06:57	WARN	local_sequence	upstream error	{"uqid": 36602, "qname": "adcdn6.tencentmusic.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:06:57	WARN	local_sequence	upstream error	{"uqid": 36602, "qname": "adcdn6.tencentmusic.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:06:57	WARN	local_sequence	upstream error	{"uqid": 36607, "qname": "sdk.e.qq.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:06:57	WARN	local_sequence	upstream error	{"uqid": 36609, "qname": "isure6.stream.qqmusic.qq.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:06:57	WARN	local_sequence	upstream error	{"uqid": 36610, "qname": "isure6.stream.qqmusic.qq.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:06:59	WARN	local_sequence	upstream error	{"uqid": 36657, "qname": "voipfinderrdsliveplay.wxqcloud.qq.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:00	WARN	local_sequence	upstream error	{"uqid": 36675, "qname": "pull-m1.wxlivecdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:01	WARN	local_sequence	upstream error	{"uqid": 36807, "qname": "pull-rtmp-l26-cny.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:02	WARN	local_sequence	upstream error	{"uqid": 36863, "qname": "pull-hs-f5-spe01.douyincdn.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:03	WARN	local_sequence	upstream error	{"uqid": 36938, "qname": "push-rtmp-l6-hs.pstatp.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:03	WARN	local_sequence	upstream error	{"uqid": 36956, "qname": "pull-flv-l1.ixigua.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:04	WARN	local_sequence	upstream error	{"uqid": 37034, "qname": "push-rtmp-l3-hs.pstatp.com.queniurc.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:04	WARN	local_sequence	upstream error	{"uqid": 37106, "qname": "pull-tsl-l13.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:05	WARN	local_sequence	upstream error	{"uqid": 37149, "qname": "pull-hls-f5-enc.flive.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:05	WARN	local_sequence	upstream error	{"uqid": 37154, "qname": "push-rtmp-l29.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:05	WARN	local_sequence	upstream error	{"uqid": 37157, "qname": "pull-flv-l6-encryption.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:05	WARN	local_sequence	upstream error	{"uqid": 37165, "qname": "pull-hls-spe-l1.douyincdn.com.wsdvs.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:05	WARN	local_sequence	upstream error	{"uqid": 37166, "qname": "sx-common-v4.volcgtm.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:05	WARN	local_sequence	upstream error	{"uqid": 37178, "qname": "pull-f5.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:06	WARN	udp_server	entry err	{"query": {"uqid": 37248, "client": "::ffff:127.0.0.1", "qname": "pull-flv-f6.douyincdn.com.", "qtype": 1, "qclass": 1, "elapsed": "5.000158128s"}, "error": "context deadline exceeded"}
+2024-04-10 20:07:06	WARN	local_sequence	upstream error	{"uqid": 37248, "qname": "pull-flv-f6.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:07:06	WARN	local_sequence	upstream error	{"uqid": 37252, "qname": "push-rtmp-f5-enc.douyincdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 20:09:15	WARN	remote_sequence.r1	upstream error	{"uqid": 37396, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 20:47:39	WARN	local_sequence	upstream error	{"uqid": 38838, "qname": "api.ipify.org.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 21:29:19	WARN	remote_sequence.r1	upstream error	{"uqid": 40346, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 21:29:20	WARN	remote_sequence.r1	upstream error	{"uqid": 40348, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 21:39:46	WARN	remote_sequence.r1	upstream error	{"uqid": 41173, "qname": "hub.docker.com.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 21:49:34	WARN	local_sequence	upstream error	{"uqid": 41593, "qname": "ioshost.qtlcdn.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 22:10:29	WARN	local_sequence	upstream error	{"uqid": 42382, "qname": "api.xmoviebot.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 23:09:01	WARN	local_sequence	upstream error	{"uqid": 44537, "qname": "tracker.m-team.io.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 23:09:01	WARN	local_sequence	upstream error	{"uqid": 44540, "qname": "tracker.m-team.io.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 23:14:51	WARN	local_sequence	upstream error	{"uqid": 45013, "qname": "default.cn.zb.wagbridge.ad.alibabacorp.com.gds.alibabadns.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 23:21:55	WARN	local_sequence	upstream error	{"uqid": 45588, "qname": "default.cn.zb.wagbridge.ad.alibabacorp.com.gds.alibabadns.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 23:25:06	WARN	local_sequence	upstream error	{"uqid": 45771, "qname": "mbd.baidu.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 23:27:24	WARN	udp_server	entry err	{"query": {"uqid": 46054, "client": "::ffff:127.0.0.1", "qname": "178.64.144.219.in-addr.arpa.", "qtype": 12, "qclass": 1, "elapsed": "5.000181031s"}, "error": "context deadline exceeded"}
+2024-04-10 23:27:24	WARN	local_sequence	upstream error	{"uqid": 46054, "qname": "178.64.144.219.in-addr.arpa.", "qclass": 1, "qtype": 12, "upstream": "unicom1", "error": "context deadline exceeded"}
+2024-04-10 23:27:31	WARN	local_sequence	upstream error	{"uqid": 46068, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 28, "upstream": "v6", "error": "context deadline exceeded"}
+2024-04-10 23:27:31	WARN	local_sequence	upstream error	{"uqid": 46067, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 1, "upstream": "unicom1", "error": "context deadline exceeded"}
+2024-04-10 23:27:31	WARN	udp_server	entry err	{"query": {"uqid": 46068, "client": "::ffff:127.0.0.1", "qname": "api.insight.synology.com.", "qtype": 28, "qclass": 1, "elapsed": "5.001878573s"}, "error": "context deadline exceeded"}
+2024-04-10 23:27:31	WARN	local_sequence	upstream error	{"uqid": 46068, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 28, "upstream": "unicom1", "error": "context deadline exceeded"}
+2024-04-10 23:32:44	WARN	local_sequence	upstream error	{"uqid": 46305, "qname": "itunessaing.qtlcdn.com.", "qclass": 1, "qtype": 28, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 23:33:10	WARN	local_sequence	upstream error	{"uqid": 46320, "qname": "connectivitycheck.gstatic.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 23:33:10	WARN	local_sequence	upstream error	{"uqid": 46320, "qname": "connectivitycheck.gstatic.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-10 23:36:43	WARN	remote_sequence.r1	upstream error	{"uqid": 46545, "qname": "open.stealth.si.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-10 23:51:44	WARN	local_sequence	upstream error	{"uqid": 47099, "qname": "www.douban.com.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-10 23:51:44	WARN	local_sequence	upstream error	{"uqid": 47099, "qname": "www.douban.com.", "qclass": 1, "qtype": 1, "upstream": "ten", "error": "context deadline exceeded"}
+2024-04-11 00:30:22	WARN	remote_sequence.r1	upstream error	{"uqid": 48306, "qname": "xiaoyakeeper.u.1996999.xyz.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-11 01:17:34	WARN	local_sequence	upstream error	{"uqid": 49682, "qname": "exodus.desync.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-11 01:35:15	WARN	local_sequence	upstream error	{"uqid": 50169, "qname": "api.insight.synology.com.", "qclass": 1, "qtype": 1, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-11 01:38:51	WARN	remote_sequence.r1	upstream error	{"uqid": 50268, "qname": "pt.soulvoice.club.", "qclass": 1, "qtype": 1, "upstream": "127.0.0.1:7874", "error": "context deadline exceeded"}
+2024-04-11 01:52:25	WARN	local_sequence	upstream error	{"uqid": 50684, "qname": "speed.neu6.edu.cn.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-11 02:00:36	WARN	local_sequence	upstream error	{"uqid": 50940, "qname": "qyapi.weixin.qq.com.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
+2024-04-11 02:56:59	WARN	local_sequence	upstream error	{"uqid": 52453, "qname": "www.shooter.cn.", "qclass": 1, "qtype": 28, "upstream": "localdns", "error": "context deadline exceeded"}
