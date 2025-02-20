@@ -6,3 +6,5 @@ DOMAIN-KEYWORD,.vm
 IP-CIDR,10.0.0.0/23
 # utools
 DOMAIN-KEYWORD,u-tools.cn
+# ntp同步
+DOMAIN-KEYWORD,ntp.org
