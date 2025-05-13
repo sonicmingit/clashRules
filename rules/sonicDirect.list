@@ -4,7 +4,12 @@ IP-CIDR,10.0.10.0/24
 DOMAIN-KEYWORD,.vm
 # 内网地址
 IP-CIDR,10.0.0.0/23
+IP-CIDR,10.0.10.0/24
+# 内网设备直连
+SRC-IP-CIDR,192.168.1.1/24
 # utools
 DOMAIN-KEYWORD,u-tools.cn
 # ntp同步
 DOMAIN-KEYWORD,ntp.org
+# 其他直连网站
+DOMAIN,gitee.com
