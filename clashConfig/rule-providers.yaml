@@ -1,0 +1,22 @@
+# 规则配置
+# rules:
+#   - RULE-SET,sonic_direct,DIRECT
+rule-providers:
+  # 直连
+  sonic_direct:
+    type: http
+    behavior: classical
+    format: yaml
+    path: ./ruleset/sonic_direct.yaml
+    url: "https://raw.githubusercontent.com/sonicming/clashRules/main/direct.yaml"
+    interval: 3600
+    # 规则名称
+    proxy: DIRECT
+  # 出国
+  sonic_proxy:
+    type: http
+    behavior: classical
+    format: yaml
+    path: ./ruleset/sonic_proxy.yaml
+    url: "https://raw.githubusercontent.com/sonicming/clashRules/main/proxy.yaml"
+    interval: 3600
