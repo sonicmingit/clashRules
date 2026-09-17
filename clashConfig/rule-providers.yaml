@@ -1,7 +1,4 @@
 # 规则配置
-# rules:
-#   - RULE-SET,sonic_direct,DIRECT
-#   - RULE-SET,custom_proxy,Proxy
 rule-providers:
   # 直连
   sonic_direct:
@@ -21,3 +18,7 @@ rule-providers:
     path: ./ruleset/sonic_proxy.yaml
     url: "https://raw.githubusercontent.com/sonicmingit/clashRules/refs/heads/main/clashConfig/openclash-rules/proxy.yaml"
     interval: 3600
+
+rules:
+  - RULE-SET,sonic_direct,DIRECT
+  - RULE-SET,sonic_proxy,Proxy    
