@@ -16,3 +16,14 @@ payload:
   - DOMAIN-SUFFIX,coindesk.com
   - DOMAIN-SUFFIX,api.coinbase.com
   - DOMAIN-SUFFIX,coinbase.com
+  # ----------------------------------------------------------
+  # 其他
+  # ----------------------------------------------------------
+  - DOMAIN-KEYWORD,dler
+  - DOMAIN-SUFFIX,docs.uhd.vod
+  # ----------------------------------------------------------
+  # tesla
+  # ----------------------------------------------------------
+  - DOMAIN,auth.tesla.cn,Proxy
+  - DOMAIN,owner-api.vn.cloud.tesla.cn,Proxy
+  - DOMAIN,streaming.vn.cloud.tesla.cn,Proxy

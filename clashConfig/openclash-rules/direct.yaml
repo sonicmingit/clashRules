@@ -43,3 +43,12 @@ payload:
   # 后续新增
   # ----------------------------------------------------------
   # - DOMAIN-SUFFIX,example.com
+  - DOMAIN-SUFFIX,d4ctech.com
+  - DOMAIN-SUFFIX,kspeeder.com
+  - DOMAIN-SUFFIX,1ms.run
+  - DOMAIN-SUFFIX,koolcenter.com
+  - DOMAIN-SUFFIX,istoreos.com
+  - DOMAIN-SUFFIX,1panel.live
+  - DOMAIN-SUFFIX,m.daocloud.io
+  - DOMAIN-SUFFIX,ixdev.cn
+  - DOMAIN-SUFFIX,vpc-huhe206-registry.cucloud.cn
