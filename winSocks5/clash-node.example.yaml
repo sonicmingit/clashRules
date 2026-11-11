@@ -1,0 +1,28 @@
+# Windows SOCKS5 节点及分流示例，适用于 Mihomo / OpenClash。
+# server 填 Windows 软件顶部显示的可达 IPv4，port 填监听端口。
+# 0.0.0.0 是监听通配地址，不能填入 server。
+# 启用白名单时，请允许 OpenWrt 连接 Windows 时使用的来源 IP。
+#
+# 这是附加配置片段。通过自定义覆写合并进现有运行配置后生效。
+# 在 OpenClash 配置管理中上传此文件，不会自动与原订阅合并。
+# 合并时将 proxies 条目追加到现有节点列表，将 rules 条目插到原规则前。
+# 以下地址、域名和目标网段均需按实际环境修改。
+
+proxies:
+  - name: Windows-VPN
+    type: socks5
+    server: 10.0.10.1
+    port: 1080
+    # 软件启用账号密码认证时，取消下面两行注释并填写实际凭据。
+    # username: "your-user"
+    # password: "your-password"
+    udp: false
+
+rules:
+  # Windows SOCKS5 服务端地址直连，应与上面的 server 一致。
+  - IP-CIDR,10.0.10.1/32,DIRECT,no-resolve
+  # 以下目标走 Windows VPN，替换成实际域名或网段。
+  - DOMAIN-SUFFIX,vpn.example.com,Windows-VPN
+  - IP-CIDR,172.20.30.0/24,Windows-VPN,no-resolve
+
+# 字段参考 https://wiki.metacubex.one/config/proxies/socks/

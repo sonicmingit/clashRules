@@ -1,7 +1,0 @@
-# 不提交代理可执行文件、配套二进制和本地运行日志。
-bin/*
-!bin/README.md
-*.log
-
-runtime/
-logs/
